@@ -1,0 +1,119 @@
+:root{
+    --primary__color--Cream: hsl(30,38%,92%);
+    --primary__color--Dark-Cyan: hsl(158,36%,37%);
+    --neutral__color-Dark-Blue: hsl(212,21%,14%);
+    --neutral__color-Grayish-Blue: hsl(228,12%,48%);
+    --neutral__color-White: white;
+}
+
+body {
+    background-color: var(--primary__color--Cream);
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.product__card {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Monserrat',sans-serif;
+    color: var(--neutral__color-Grayish-Blue);
+    height: 500px;
+}
+
+.img__container{
+    justify-self: end;
+}
+
+.img__container img {
+    height: -webkit-fill-available;
+}
+
+.product__card--main {
+    max-width: 300px;
+    padding: 15px;
+    background-color: var(--neutral__color-White);
+    padding: 26px;
+}
+
+.main__details {
+    padding: 0 30px;
+}
+
+.main__details p {
+    line-height: 22px;
+    font-size: 17px;
+    word-spacing: 6px;
+}
+
+.details__information  h1{
+    font-family: 'Fraunces', serif;
+    color: var(--neutral__color-Dark-Blue);
+    line-height: 30px;
+}
+
+.details__information  h4{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 14px;
+}
+
+.details__information p, h4 {
+    color: var(--neutral__color-Grayish-Blue);
+    font-weight: 500;
+}
+
+.details__prices {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#price__discounted {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: var(--primary__color--Dark-Cyan);
+}
+
+#price__original {
+    text-decoration: line-through;
+    font-size: 17px;
+}
+
+.main__purchase-btn {
+    padding-top: 10px;
+}
+
+.main__purchase-btn  * {
+    font-weight: 700;
+}
+
+button {
+    background-color: var(--primary__color--Dark-Cyan);
+    color: var(--neutral__color-White);
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 7px;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--neutral__color-Dark-Blue);
+}
