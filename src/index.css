@@ -117,3 +117,8 @@ button:hover {
     cursor: pointer;
     background-color: var(--neutral__color-Dark-Blue);
 }
+
+button:focus {
+    outline: var(--primary__color--Dark-Cyan) 1px solid;
+    outline-offset: 2px;
+}
