@@ -1,0 +1,50 @@
+@media screen and (max-width:710px) and (orientation:portrait){
+
+    #wrapper {
+        align-items: center;
+        margin: 25px;
+        min-height: 90vh;
+    }
+
+    .product__card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .product__card--main {
+        max-width: none;
+        padding: 7px;
+    }
+
+    .main__details {
+        padding:0 12px;
+    }
+
+    .main__details p {
+        font-size: 15px;
+        word-spacing: 1px;
+    }
+
+    .img__container img {
+        width: -webkit-fill-available;
+        content:url("../images/image-product-mobile.jpg");
+    }
+
+    .details__prices p {
+        margin-block: 9px;
+    }
+}
+
+@media screen and (max-width: 710px) and (orientation: landscape) {
+    .product__card {
+        height: 310px;
+    }
+
+    .product__card--main {
+        padding: 14px;
+    }
+
+    .details__information h1 {
+        margin: 0;
+    }
+}
